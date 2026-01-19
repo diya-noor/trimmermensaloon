@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /dashboard
+
+# Sitemap
+Sitemap: https://trimmersaloon.com/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
