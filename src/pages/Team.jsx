@@ -1,5 +1,5 @@
 import { boss, employees } from '../data/employees';
-import { Star, Award, Briefcase, Phone, Mail, CheckCircle, XCircle } from 'lucide-react';
+import { Star, Briefcase, Phone, CheckCircle, XCircle } from 'lucide-react';
 
 const Team = () => {
   return (
@@ -10,8 +10,8 @@ const Team = () => {
           <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: "url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070')"}}></div>
         </div>
         <div className="container-custom text-center relative z-10">
-          <h1 className="heading-1 text-white mb-4">Meet Our Team</h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <h1 className="heading-1 text-white mb-4 text-3xl sm:text-4xl md:text-5xl">Meet Our Team</h1>
+          <p className="text-base sm:text-xl text-gray-300 max-w-2xl mx-auto px-4">
             Expert professionals dedicated to your grooming needs
           </p>
         </div>
@@ -107,13 +107,13 @@ const Team = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
             {employees.map((employee) => (
               <div key={employee.id} className="card group">
-                <div className="p-6">
+                <div className="p-3 sm:p-6">
                   {/* Avatar */}
-                  <div className="flex justify-center mb-4">
-                    <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 group-hover:scale-105 transition-transform shadow-lg shadow-primary-500/20">
+                  <div className="flex justify-center mb-2 sm:mb-4">
+                    <div className="w-20 h-20 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 group-hover:scale-105 transition-transform shadow-lg shadow-primary-500/20">
                       <div className="w-full h-full rounded-full overflow-hidden bg-dark-900">
                         <img
                           src={employee.image}
@@ -125,7 +125,7 @@ const Team = () => {
                             e.target.nextSibling.style.display = 'flex';
                           }}
                         />
-                        <div className="w-full h-full rounded-full bg-black items-center justify-center text-white text-4xl font-bold hidden">
+                        <div className="w-full h-full rounded-full bg-black items-center justify-center text-white text-2xl sm:text-4xl font-bold hidden">
                           {employee.name.charAt(0)}
                         </div>
                       </div>
@@ -133,39 +133,39 @@ const Team = () => {
                   </div>
 
                   {/* Info */}
-                  <h3 className="text-xl font-semibold mb-1 text-white group-hover:text-primary-400 transition-colors">
+                  <h3 className="text-sm sm:text-xl font-semibold mb-1 text-white group-hover:text-primary-400 transition-colors text-center sm:text-left">
                     {employee.name}
                   </h3>
-                  <p className="text-primary-500 font-medium mb-2">{employee.role}</p>
+                  <p className="text-primary-500 font-medium mb-2 text-xs sm:text-base text-center sm:text-left">{employee.role}</p>
 
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center justify-between mb-3 flex-wrap gap-1">
                     <div className="flex items-center space-x-1">
-                      <Star className="w-4 h-4 text-primary-500 fill-current" />
-                      <span className="text-sm font-semibold text-white">{employee.rating}</span>
+                      <Star className="w-3 h-3 sm:w-4 sm:h-4 text-primary-500 fill-current" />
+                      <span className="text-xs sm:text-sm font-semibold text-white">{employee.rating}</span>
                     </div>
                     <div className="flex items-center space-x-1">
-                      <Briefcase className="w-4 h-4 text-gray-400" />
-                      <span className="text-sm text-gray-300">{employee.experience}</span>
+                      <Briefcase className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400" />
+                      <span className="text-xs sm:text-sm text-gray-300">{employee.experience}</span>
                     </div>
                   </div>
 
                   {/* Availability Badge */}
-                  <div className="mb-4">
+                  <div className="mb-2 sm:mb-4">
                     {employee.available ? (
-                      <span className="flex items-center text-green-400 text-sm font-medium">
-                        <CheckCircle className="w-4 h-4 mr-1" />
+                      <span className="flex items-center justify-center sm:justify-start text-green-400 text-xs sm:text-sm font-medium">
+                        <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                         Available
                       </span>
                     ) : (
-                      <span className="flex items-center text-gray-400 text-sm font-medium">
-                        <XCircle className="w-4 h-4 mr-1" />
+                      <span className="flex items-center justify-center sm:justify-start text-gray-400 text-xs sm:text-sm font-medium">
+                        <XCircle className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                         Busy
                       </span>
                     )}
                   </div>
 
-                  {/* Specialties */}
-                  <div>
+                  {/* Specialties - hidden on mobile */}
+                  <div className="hidden sm:block">
                     <p className="text-xs font-semibold text-gray-300 mb-2">Specialties:</p>
                     <div className="flex flex-wrap gap-1">
                       {employee.specialties.map((specialty, index) => (

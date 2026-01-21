@@ -13,7 +13,7 @@ const Home = () => {
     {
       icon: <Award className="w-8 h-8" />,
       title: 'Premium Grooming Services',
-      description: 'Luxury facials, keratin treatments, and bridal grooming packages for the modern gentleman'
+      description: 'Luxury facials, keratin treatments, and premium grooming packages for the modern gentleman'
     },
     {
       icon: <Clock className="w-8 h-8" />,
@@ -52,7 +52,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto px-4">
-              Premium men's grooming, haircuts, beard styling & bridal packages in Rawalpindi with 15+ years expertise
+              Premium men's grooming, haircuts, beard styling & grooming packages in Rawalpindi with 15+ years expertise
             </p>
             <div className="flex flex-wrap gap-4 justify-center mb-16">
               <a href="tel:0307-5552224" className="btn-primary flex items-center space-x-2 text-lg px-10 py-4">
@@ -137,21 +137,21 @@ const Home = () => {
           <div className="scroll-content">
             {/* Duplicate the services array for infinite scroll effect */}
             {[...services.cuttings.slice(0, 3), ...services.facials.slice(0, 3), ...services.cuttings.slice(0, 3), ...services.facials.slice(0, 3)].map((service, idx) => (
-              <div key={idx} className="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[350px] bg-black border-2 border-primary-500 rounded-[2rem] p-4 sm:p-6 hover:shadow-2xl hover:shadow-primary-500/50 hover:-translate-y-2 transition-all duration-300 group">
-                <div className="flex justify-between items-start mb-3 sm:mb-4">
-                  <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-primary-400 transition-colors flex-1">
+              <div key={idx} className="flex-shrink-0 w-[100px] sm:w-[280px] md:w-[320px] bg-black border-2 border-primary-500 rounded-[1rem] sm:rounded-[2rem] p-2 sm:p-4 md:p-6 hover:shadow-2xl hover:shadow-primary-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                <div className="flex justify-between items-start mb-1 sm:mb-3 md:mb-4">
+                  <h3 className="text-sm sm:text-xl md:text-2xl font-bold text-white group-hover:text-primary-400 transition-colors flex-1 line-clamp-2">
                     {service.name}
                   </h3>
                 </div>
-                <div className="flex items-end justify-between mt-4 sm:mt-6">
-                  <span className="text-3xl sm:text-4xl font-bold text-primary-500">
+                <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mt-2 sm:mt-4 md:mt-6">
+                  <span className="text-lg sm:text-3xl md:text-4xl font-bold text-primary-500">
                     {formatPrice(service.price)}
                   </span>
                   <Link
                     to="/services"
-                    className="text-primary-500 font-semibold hover:text-primary-400 inline-flex items-center text-sm sm:text-base"
+                    className="text-primary-500 font-semibold hover:text-primary-400 inline-flex items-center text-xs sm:text-sm md:text-base mt-1 sm:mt-0"
                   >
-                    Learn More <ArrowRight className="w-4 h-4 ml-1" />
+                    <span className="hidden sm:inline">Learn More</span> <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1" />
                   </Link>
                 </div>
               </div>

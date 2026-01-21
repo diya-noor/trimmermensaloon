@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="h-16 w-16 rounded-full bg-black p-0.5 border-2 border-primary-500/50 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 group-hover:border-primary-400">
+            <div className="h-10 w-10 sm:h-16 sm:w-16 rounded-full bg-black p-0.5 border-2 border-primary-500/50 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 group-hover:border-primary-400">
               <img
                 src="/images/trimmer-mens-saloon-logo-rawalpindi.png"
                 alt="Trimmer Men's Saloon Logo - Best Men's Salon in Rawalpindi"
@@ -28,8 +28,8 @@ const Navbar = () => {
               />
             </div>
             <div>
-              <h1 className="text-xl sm:text-2xl font-display font-bold text-white group-hover:text-primary-400 transition-colors duration-300">Trimmer</h1>
-              <p className="text-xs text-primary-500 font-semibold tracking-wider hidden sm:block">MEN'S SALOON</p>
+              <h1 className="text-base sm:text-2xl font-display font-bold text-white group-hover:text-primary-400 transition-colors duration-300">Trimmer</h1>
+              <p className="text-[10px] sm:text-xs text-primary-500 font-semibold tracking-wider">MEN'S SALOON</p>
             </div>
           </Link>
 

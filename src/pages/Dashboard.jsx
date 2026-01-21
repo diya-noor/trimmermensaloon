@@ -3,11 +3,9 @@ import { boss, employees } from '../data/employees';
 import { services, deals, packages } from '../data/services';
 import {
   Users,
-  Calendar,
   DollarSign,
   TrendingUp,
   Star,
-  Clock,
   CheckCircle,
   XCircle,
   BarChart3
@@ -18,13 +16,6 @@ const Dashboard = () => {
 
   // Mock data for dashboard
   const stats = [
-    {
-      title: 'Today\'s Appointments',
-      value: '24',
-      change: '+12%',
-      icon: <Calendar className="w-6 h-6" />,
-      color: 'bg-blue-500'
-    },
     {
       title: 'Total Revenue',
       value: 'Rs. 450,000',
@@ -46,14 +37,6 @@ const Dashboard = () => {
       icon: <Star className="w-6 h-6" />,
       color: 'bg-primary-500'
     }
-  ];
-
-  const recentBookings = [
-    { id: 1, client: 'Ahmed Ali', service: 'Janssen Facial', time: '10:00 AM', status: 'completed' },
-    { id: 2, client: 'Hassan Khan', service: 'Haircut + Beard', time: '11:30 AM', status: 'in-progress' },
-    { id: 3, client: 'Bilal Sheikh', service: 'Nikkah Package', time: '02:00 PM', status: 'scheduled' },
-    { id: 4, client: 'Usman Tariq', service: 'Hair Coloring', time: '03:30 PM', status: 'scheduled' },
-    { id: 5, client: 'Faisal Ahmed', service: 'Full Body Massage', time: '05:00 PM', status: 'scheduled' },
   ];
 
   const tabs = [
@@ -112,7 +95,7 @@ const Dashboard = () => {
         <div className="section-padding bg-black">
           <div className="container-custom">
             {/* Stats Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
               {stats.map((stat, index) => (
                 <div key={index} className="card">
                   <div className="p-6">
@@ -129,53 +112,6 @@ const Dashboard = () => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            {/* Recent Bookings */}
-            <div className="card mb-8">
-              <div className="p-6">
-                <h2 className="text-2xl font-bold mb-6 flex items-center text-white">
-                  <Calendar className="w-6 h-6 mr-2 text-primary-500" />
-                  Today's Appointments
-                </h2>
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead className="bg-black/40 border-b border-primary-500/30">
-                      <tr>
-                        <th className="text-left py-3 px-4 font-semibold text-gray-300">Client</th>
-                        <th className="text-left py-3 px-4 font-semibold text-gray-300">Service</th>
-                        <th className="text-left py-3 px-4 font-semibold text-gray-300">Time</th>
-                        <th className="text-left py-3 px-4 font-semibold text-gray-300">Status</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-800">
-                      {recentBookings.map((booking) => (
-                        <tr key={booking.id} className="hover:bg-black/40 transition-colors">
-                          <td className="py-4 px-4 font-medium text-white">{booking.client}</td>
-                          <td className="py-4 px-4 text-gray-300">{booking.service}</td>
-                          <td className="py-4 px-4 flex items-center text-gray-300">
-                            <Clock className="w-4 h-4 mr-2 text-gray-500" />
-                            {booking.time}
-                          </td>
-                          <td className="py-4 px-4">
-                            <span
-                              className={`px-3 py-1 rounded-full text-sm font-medium ${
-                                booking.status === 'completed'
-                                  ? 'bg-green-500/20 text-green-400 border border-green-500/40'
-                                  : booking.status === 'in-progress'
-                                  ? 'bg-blue-500/20 text-blue-400 border border-blue-500/40'
-                                  : 'bg-gray-500/20 text-gray-400 border border-gray-500/40'
-                              }`}
-                            >
-                              {booking.status}
-                            </span>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
             </div>
           </div>
         </div>
