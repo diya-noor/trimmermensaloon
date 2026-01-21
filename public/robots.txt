@@ -4,7 +4,7 @@ Allow: /
 Disallow: /dashboard
 
 # Sitemap
-Sitemap: https://trimmersaloon.com/sitemap.xml
+Sitemap: https://trimmermensaloon.vercel.app/sitemap.xml
 
 # Crawl-delay for better server performance
 Crawl-delay: 1
