@@ -12,7 +12,7 @@ export const services = {
   ],
 
   cleansing: [
-    { id: 'normal-cleansing', name: 'Normal Cleansing', price: 100 },
+    { id: 'normal-cleansing', name: 'Normal Cleansing', price: 1000 },
     { id: 'gold-cleansing', name: 'Gold Cleansing', price: 1500 },
     { id: 'hi-li-cleansing', name: 'Hi Li Cleansing', price: 1500 },
     { id: 'darma-cous-cleansing', name: 'Darma Cous Cleansing', price: 2000 },
