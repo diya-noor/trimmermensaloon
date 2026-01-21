@@ -51,7 +51,7 @@ const Contact = () => {
                         Basement of Samba Bank, Rawalpindi
                       </p>
                       <a
-                        href="https://maps.google.com/?q=B-991+Haideri+Chowk+Rawalpindi"
+                        href="https://maps.app.goo.gl/38Mm5zUtkBwuzCmBA"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary-500 hover:text-primary-400 font-semibold mt-2 inline-block"
@@ -137,7 +137,7 @@ const Contact = () => {
               <div className="card mb-6 overflow-hidden">
                 <div className="aspect-video bg-gray-900">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.8!2d73.0586!3d33.6146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df952c67c1f8a5%3A0x123456789!2sB-991%20Haideri%20Chowk%2C%20Satellite%20Town%2C%20Rawalpindi%2C%20Punjab!5e0!3m2!1sen!2spk!4v1640000000000"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1660.8789966802055!2d73.06142409839478!3d33.63751639999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df955b2b2147d3%3A0xab164966f30824a8!2sTrimmer%20Mens%20Saloon!5e0!3m2!1sen!2s!4v1769023971286!5m2!1sen!2s"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
