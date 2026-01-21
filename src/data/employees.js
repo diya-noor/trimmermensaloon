@@ -2,7 +2,7 @@ export const boss = {
   id: 'boss-1',
   name: 'M. Ilyas',
   role: 'Owner & Master Stylist',
-  tagline: 'Wakeup Beauty Its Time To Best',
+  tagline: 'Unleash your best look. Time to glow',
   experience: '15+ years',
   specialties: ['Luxury Facials', 'Bridal Grooming', 'Hair Styling', 'Premium Services'],
   image: '/images/team/owner-ilyas-master-stylist-trimmer-mens-saloon-rawalpindi.jpg',
