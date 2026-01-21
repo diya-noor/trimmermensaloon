@@ -19,7 +19,7 @@ const Footer = () => {
               Rawalpindi's premier men's salon in Satellite Town. Professional haircuts, beard styling, facials & grooming since 2009.
             </p>
             <p className="text-sm text-gray-500 italic">
-              Wakeup Beauty Its Time To Best
+              Unleash your best look. Time to glow
             </p>
           </div>
 
