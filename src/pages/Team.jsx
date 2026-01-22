@@ -164,14 +164,14 @@ const Team = () => {
                     )}
                   </div>
 
-                  {/* Specialties - hidden on mobile */}
-                  <div className="hidden sm:block">
+                  {/* Specialties */}
+                  <div>
                     <p className="text-xs font-semibold text-gray-300 mb-2">Specialties:</p>
                     <div className="flex flex-wrap gap-1">
                       {employee.specialties.map((specialty, index) => (
                         <span
                           key={index}
-                          className="bg-primary-500/20 text-primary-400 border border-primary-500/40 px-2 py-1 rounded text-xs"
+                          className="bg-primary-500/20 text-primary-400 border border-primary-500/40 px-1 sm:px-2 py-0.5 sm:py-1 rounded text-[10px] sm:text-xs"
                         >
                           {specialty}
                         </span>
