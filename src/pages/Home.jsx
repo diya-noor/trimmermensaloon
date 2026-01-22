@@ -46,7 +46,7 @@ const Home = () => {
         <div className="container-custom relative z-10 py-32">
           <div className="text-center max-w-5xl mx-auto">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight">
-              Best Men's Salon in Satellite Town
+              Best Men's Saloon in Satellite Town
               <span className="block mt-2 bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 bg-clip-text text-transparent">
                 Trimmer Men's Saloon Rawalpindi
               </span>
