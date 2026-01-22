@@ -151,10 +151,6 @@ const Contact = () => {
 
               {/* Quick Contact */}
               <div className="bg-gradient-to-br from-primary-500 to-primary-700 text-black p-8 rounded-2xl border-2 border-primary-400">
-                <h3 className="text-2xl font-bold mb-4">Book An Appointment</h3>
-                <p className="mb-6 text-black/80">
-                  Call us now to schedule your grooming session
-                </p>
                 <div className="space-y-3">
                   <a
                     href="tel:0307-5552224"
