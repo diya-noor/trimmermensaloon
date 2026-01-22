@@ -16,7 +16,7 @@ const Footer = () => {
               Trimmer Men's Saloon
             </h3>
             <p className="text-gray-400 mb-4 text-sm sm:text-base">
-              Rawalpindi's premier men's salon in Satellite Town. Professional haircuts, beard styling, facials & grooming since 2009.
+              Rawalpindi's premier men's saloon in Satellite Town. Professional haircuts, beard styling, facials & grooming since 2009.
             </p>
             <p className="text-sm text-gray-500 italic">
               Unleash your best look. Time to glow
@@ -84,9 +84,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-primary-400">Opening Hours</h3>
             <ul className="space-y-2 text-gray-400">
-              <li className="flex justify-between">
+              <li className="flex justify-between gap-4">
                 <span>Open 7 Days a Week</span>
-                <span className="text-primary-400">9 AM - 12 AM</span>
+                <span className="text-primary-400 whitespace-nowrap">9 AM - 12 AM</span>
               </li>
               <li className="text-sm text-gray-500 italic">
                 Monday - Sunday

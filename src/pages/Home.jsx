@@ -96,7 +96,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 text-white">Why Choose Trimmer Men's Saloon in Rawalpindi</h2>
             <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto px-4">
-              Satellite Town's most trusted men's salon providing exceptional grooming experiences with attention to detail and 100% customer satisfaction
+              Satellite Town's most trusted men's saloon providing exceptional grooming experiences with attention to detail and 100% customer satisfaction
             </p>
           </div>
 
@@ -226,7 +226,7 @@ const Home = () => {
                 name: 'Ahmed Khan',
                 location: 'Rawalpindi',
                 rating: 5,
-                text: 'Best salon experience in town! The staff is professional and the ambiance is top-notch. Highly recommended for anyone looking for quality grooming services.',
+                text: 'Best saloon experience in town! The staff is professional and the ambiance is top-notch. Highly recommended for anyone looking for quality grooming services.',
               },
               {
                 name: 'Usman Ali',
