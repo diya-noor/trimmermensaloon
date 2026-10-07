@@ -95,7 +95,6 @@ export const employees = [
     imagePosition: 'center 55%',
     rating: 4.9,
     available: true
-<<<<<<< HEAD
   },
   {
     id: 'emp-9',
@@ -115,8 +114,6 @@ export const employees = [
     specialties: ['Haircut', 'Beard', 'Facial', 'Cleansing', 'Massage', 'Coloring', 'Manicure', 'Pedicure', 'Keratin'],
     image: '/Hamza.jpeg',
     rating: 4.9,
-    available: true
-=======
->>>>>>> cad67090351a319926891b5f7324c18ff6c8f08c
+    available: true,
   }
 ];
